@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Lato;
+}
+
+.header {
+  background: url(./images/header-background.svg) no-repeat top right, #f4f6f9;
+  background-size: auto 100%;
+  width: 100vw;
+  height: 100vh;
+}
+.header__container {
+  margin-left: 163px;
+}
+.header__logo {
+  margin: 61px 0 133px;
+}
+.header__text h1 {
+  width: 546px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.header__text p {
+  width: 453px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  color: #4F4F4F;
+  margin-bottom: 50px;
+}
+.header__appLinks .appStore {
+  margin-right: 30px;
+}
+
+/*# sourceMappingURL=output.css.map */

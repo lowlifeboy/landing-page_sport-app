@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,500,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +8,18 @@ body {
   font-family: Lato;
 }
 
+.container {
+  width: 1135px;
+  padding: 0 10px;
+}
+
 .header {
   background: url(./images/header-background.svg) no-repeat top right, #f4f6f9;
   background-size: auto 100%;
   width: 100vw;
-  height: 100vh;
-}
-.header__container {
-  margin-left: 163px;
+  height: 665px;
+  display: flex;
+  justify-content: center;
 }
 .header__logo {
   margin: 61px 0 133px;
@@ -39,6 +43,284 @@ body {
 }
 .header__appLinks .appStore {
   margin-right: 30px;
+}
+
+.whatItDoes {
+  background: url(./images/whatItDoes-background.svg) no-repeat top left, #fff;
+  background-size: auto 100%;
+  width: 100vw;
+  height: 592px;
+  display: flex;
+  justify-content: center;
+}
+.whatItDoes__left {
+  float: left;
+}
+.whatItDoes__comandsInfo {
+  height: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 27px 15px;
+}
+.whatItDoes__matchInfo {
+  position: absolute;
+  width: 360px;
+  height: 218px;
+  background: #fff;
+  box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  top: 109px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+.whatItDoes__matchInfo__date {
+  font-weight: bold;
+  font-size: 16.7833px;
+  line-height: 22px;
+  color: #4F4F4F;
+  margin-bottom: 12.5px;
+}
+.whatItDoes__matchInfo__comands {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  width: 80px;
+  margin-bottom: 15px;
+}
+.whatItDoes__matchInfo__type {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+}
+.whatItDoes__matchInfo__logos {
+  position: relative;
+}
+.whatItDoes__matchInfo__logos img {
+  position: absolute;
+  top: 19px;
+}
+.whatItDoes__matchInfo__logos img:first-child {
+  z-index: 2;
+  right: 0px;
+}
+.whatItDoes__matchInfo__logos img:last-child {
+  z-index: 1;
+  right: 71px;
+}
+.whatItDoes__notification {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #eee;
+  box-sizing: border-box;
+  padding: 15px 13.5px;
+  font-weight: normal;
+  font-size: 18.8812px;
+  line-height: 25px;
+  color: #4F4F4F;
+  border-radius: 0 0 4px 4px;
+}
+.whatItDoes__checkbox {
+  position: relative;
+  display: flex;
+}
+.whatItDoes__checkbox p {
+  margin-right: 32px;
+}
+.whatItDoes__checkbox .checkbox {
+  position: absolute;
+  top: 4px;
+  right: 25px;
+  z-index: -1;
+  opacity: 1;
+}
+.whatItDoes__checkbox .checkbox + label {
+  position: relative;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.whatItDoes__checkbox .checkbox + label:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 27px;
+  height: 12.5px;
+  border-radius: 6.25px;
+  background: #CDD1DA;
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+  transition: 0.2s;
+}
+.whatItDoes__checkbox .checkbox + label:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #FFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+.whatItDoes__checkbox .checkbox:checked + label:before {
+  background: #00ADEE;
+}
+.whatItDoes__checkbox .checkbox:checked + label:after {
+  left: 12px;
+}
+.whatItDoes__checkbox .checkbox:focus + label:before {
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.whatItDoes__right {
+  margin-top: 133px;
+}
+.whatItDoes__right h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #00ADEE;
+  margin-bottom: 27px;
+}
+.whatItDoes__right h2 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 37px;
+  color: #333333;
+  margin-bottom: 27px;
+}
+.whatItDoes__right p {
+  width: 407px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: #4F4F4F;
+  margin-bottom: 22px;
+}
+.whatItDoes__right a {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #00ADEE;
+  text-decoration: none;
+}
+.whatItDoes__matchPreview {
+  position: absolute;
+  width: 360px;
+  height: 218px;
+  box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  left: 116px;
+  top: 296px;
+  z-index: 1;
+}
+
+.whatItDoes .container,
+.getStarted .container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.getStarted {
+  position: relative;
+  background: url(./images/getStarted-background.svg) no-repeat top right;
+  background-size: auto 100%;
+  width: 100vw;
+  height: 716px;
+  display: flex;
+  justify-content: center;
+}
+.getStarted__left {
+  margin-top: 217px;
+}
+.getStarted__left h3 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #00ADEE;
+  margin-bottom: 27px;
+}
+.getStarted__left h2 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 37px;
+  color: #333333;
+  margin-bottom: 27px;
+}
+.getStarted__left p {
+  width: 407px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: #4F4F4F;
+  margin-bottom: 22px;
+}
+.getStarted__left a {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #00ADEE;
+  text-decoration: none;
+}
+.getStarted__backdroundAnimImg1 {
+  position: absolute;
+  top: 54px;
+  right: -9px;
+  z-index: 1;
+}
+.getStarted__backdroundAnimImg2 {
+  position: absolute;
+  top: 154px;
+  right: 94px;
+  z-index: 1;
+}
+.getStarted__phoneContainer {
+  width: 100%;
+  position: relative;
+}
+.getStarted__phone {
+  position: absolute;
+  top: 84px;
+  right: 254px;
+  z-index: 10;
+}
+
+.features {
+  height: 735px;
+  background-color: #00ADEE;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+.features .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features h2 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 37px;
+  margin-top: 76px;
+  margin-bottom: 58px;
+}
+.features ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+}
+.features ul li {
+  width: 311px;
+  margin-bottom: 32px;
 }
 
 /*# sourceMappingURL=output.css.map */
